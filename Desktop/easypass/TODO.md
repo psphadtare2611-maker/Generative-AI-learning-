@@ -1,0 +1,1 @@
+- [x] Modify dashboard.php to conditionally hide the "Monthly Pass" row in the "My Passes" table for new users, keeping only the "Buy New Pass" button visible.

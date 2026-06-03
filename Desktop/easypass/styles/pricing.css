@@ -1,0 +1,335 @@
+/* Payment Form Styles - Improved */
+.payment-form {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.payment-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.payment-form .form-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.payment-form .form-header h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.payment-form .form-header h2 span {
+  font-weight: 700;
+}
+
+#selected-plan {
+  position: relative;
+  color: var(--primary-color);
+}
+
+.payment-form label {
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.payment-form input,
+.payment-form select {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+  background-color: var(--white);
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+.payment-method:hover {
+  border-color: var(--primary-color);
+  background-color: #f0f7ff;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 0.8rem;
+  width: auto;
+}
+
+.payment-method input[type="radio"]:checked + label {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.payment-method:has(input[type="radio"]:checked) {
+  border-color: var(--primary-color);
+  background-color: #f0f7ff;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.15);
+}
+
+.payment-method label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.payment-method i {
+  margin-right: 0.7rem;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.half {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+#credit-card-details,
+#upi-details,
+#net-banking-details,
+#wallet-details {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+#credit-card-details:hover,
+#upi-details:hover,
+#net-banking-details:hover,
+#wallet-details:hover {
+  border-color: var(--primary-color);
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(to right, #f0f7ff, #e6f0ff);
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-weight: bold;
+  border-left: 4px solid var(--primary-color);
+}
+
+.amount-label {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+.amount-value {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+}
+
+.checkbox input {
+  margin: 0.25rem 0.8rem 0 0;
+  width: auto;
+}
+
+.checkbox label {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.checkbox a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--medium-gray);
+  transition: color 0.2s;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  color: var(--danger-color);
+}
+#payment-form-container {
+  max-height: 90vh; /* Adjust as needed */
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Customize scrollbar for Webkit browsers (Chrome, Safari) */
+#payment-form-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+#payment-form-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#payment-form-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#payment-form-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Add animation for form container */
+.form-container {
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+/* Success message styling */
+.success-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-message i {
+  font-size: 5rem;
+  color: var(--success-color);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.success-message h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--medium-gray);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .payment-form {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .payment-form .form-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .amount-value {
+    font-size: 1.3rem;
+  }
+}

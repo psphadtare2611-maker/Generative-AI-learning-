@@ -1,0 +1,30 @@
+2025-12-03 19:21:11 | ERROR: Unknown column 'amount_paid' in 'field list'
+2025-12-03 19:23:44 | Created test pass id=1 for user_id=0, expires=2025-12-04
+2025-12-03 19:23:46 | Email to psphadtare2611@gmail.com status: failed
+2025-12-03 19:23:46 | In-app notification created for user_id=0
+[2025-12-06 16:04:28] Starting pass reminder cron job (v2).
+[2025-12-06 16:04:28] Configuration: Sending reminders for passes expiring in 1 days.
+[2025-12-06 16:04:31] Failed to send to psphadtare2611@gmail.com (Pass ID: 2)
+[2025-12-06 16:04:33] Failed to send to psphadtare2611@gmail.com (Pass ID: 3)
+[2025-12-06 16:04:37] Failed to send to atharvapatil@gmail.com (Pass ID: 2)
+[2025-12-06 16:04:40] Failed to send to atharvapatil@gmail.com (Pass ID: 3)
+[2025-12-06 16:04:43] Failed to send to sohampatil277@gmail.com (Pass ID: 2)
+[2025-12-06 16:04:46] Failed to send to sohampatil277@gmail.com (Pass ID: 3)
+[2025-12-06 16:04:49] Failed to send to shardulagarwal895@gmail.com (Pass ID: 2)
+[2025-12-06 16:04:51] Failed to send to shardulagarwal895@gmail.com (Pass ID: 3)
+[2025-12-06 16:04:51] Job finished. Sent 0 reminders.
+[2025-12-06 16:24:41] Starting pass reminder cron job.
+[2025-12-06 16:24:41] Configuration: Sending reminders for passes expiring in 1 days.
+[2025-12-06 16:24:43] Failed to send to psphadtare2611@gmail.com (Pass ID: 2)
+[2025-12-06 16:24:46] Failed to send to psphadtare2611@gmail.com (Pass ID: 3)
+[2025-12-06 16:24:49] Failed to send to psphadtare2611@gmail.com (Pass ID: 4)
+[2025-12-06 16:24:51] Failed to send to atharvapatil@gmail.com (Pass ID: 2)
+[2025-12-06 16:24:54] Failed to send to atharvapatil@gmail.com (Pass ID: 3)
+[2025-12-06 16:24:57] Failed to send to atharvapatil@gmail.com (Pass ID: 4)
+[2025-12-06 16:25:00] Failed to send to sohampatil277@gmail.com (Pass ID: 2)
+[2025-12-06 16:25:03] Failed to send to sohampatil277@gmail.com (Pass ID: 3)
+[2025-12-06 16:25:05] Failed to send to sohampatil277@gmail.com (Pass ID: 4)
+[2025-12-06 16:25:09] Failed to send to shardulagarwal895@gmail.com (Pass ID: 2)
+[2025-12-06 16:25:12] Failed to send to shardulagarwal895@gmail.com (Pass ID: 3)
+[2025-12-06 16:25:14] Failed to send to shardulagarwal895@gmail.com (Pass ID: 4)
+[2025-12-06 16:25:14] Job finished. Sent 0 reminders.
